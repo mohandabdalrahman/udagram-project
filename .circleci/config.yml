@@ -60,18 +60,3 @@ jobs:
           command: |
             echo "Install, build, deploy in both apps"
             npm run deploy
-
-workflows:
-  udagram:
-    jobs:
-      - build
-      - Trigger Deployment:
-          filters:
-            branches:
-              only:
-                - master
-          requires:
-            - build
-      - deploy:
-          requires:
-            - Trigger Deployment
