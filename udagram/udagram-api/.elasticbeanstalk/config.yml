@@ -1,9 +1,9 @@
 branch-defaults:
   default:
-    environment: UdagramApi-env
+    environment: Udagram-env
     group_suffix: null
 environment-defaults:
-  UdagramApi-env:
+  Udagram-env:
     branch: null
     repository: null
 global:
