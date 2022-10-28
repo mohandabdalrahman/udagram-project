@@ -44,6 +44,11 @@ jobs:
           command: |
             echo "Build the backend API"
             npm run api:build
+      - run:
+          name: Deploy App
+          command: |
+            echo "Install, build, deploy in both apps"
+            npm run deploy
   # deploy step will run only after manual approval
   deploy:
     docker:
